@@ -9,10 +9,8 @@ then 21 beepers, and end facing East to the right of the 21 beepers.
 
 def main():
     """
-    You should write your code to make Karel do its task in
-    this function. Make sure to delete the 'pass' line before
-    starting to write your own code. You should also delete this
-    comment and replace it with a better, more descriptive one.
+    Karel spells out 2021 in beepers by placing 20 beepers, moving, 
+    placing 21 beepers, and then moving again.
     """
     place_20_beepers()
     place_21_beepers()

@@ -9,10 +9,8 @@ Karel should end in the same position Karel starts in -- the bottom left corner 
 
 def main():
     """
-    You should write your code to make Karel do its task in
-    this function. Make sure to delete the 'pass' line before
-    starting to write your own code. You should also delete this
-    comment and replace it with a better, more descriptive one.
+    Karel finishes her puzzle by picking up the beeper, placing it in the puzzle, 
+    then returning to her starting position. 
     """
     move_to_beeper()
     place_in_puzzle()
