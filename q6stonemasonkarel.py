@@ -24,6 +24,21 @@ def main():
     check_for_column()
     move_to_next_column()
     check_for_column()
+    if front_is_clear():
+        move_to_next_column()
+        check_for_column()
+        move_to_next_column()
+        check_for_column()
+        move_to_next_column()
+        check_for_column()
+        move_to_next_column()
+        check_for_column()
+        move_to_next_column()
+        check_for_column()
+        move_to_next_column()
+        check_for_column()
+        move_to_next_column()
+        check_for_column()
 
 def first_column():
     turn_left()
