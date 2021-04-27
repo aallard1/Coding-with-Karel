@@ -14,25 +14,16 @@ def main():
     """
     move_to_top_line()
     draw_h()
-    move()
     draw_e()
-    move()
     draw_l()
-    move()
     draw_l()
-    move()
     draw_o()
     move_down()
     draw_w()
-    move()
     draw_o()
-    move()
     draw_r()
-    move()
     draw_l()
-    move()
     draw_d()
-    move()
 
 """ 
 pre: Karel is facing north, prior to writing.
@@ -54,7 +45,8 @@ def draw_h():
     turn_around()
     draw_line()
     turn_left()
-    move()
+    for i in range(2):
+        move()
 
 """ 
 pre: Karel is facing east, two spaces past the previous letter.
@@ -74,7 +66,7 @@ def draw_e():
     turn_left()
     draw_prong()
     turn_left()
-    for i in range(3):
+    for i in range(4):
         move()
 
 """ 
@@ -90,7 +82,7 @@ def draw_l():
     turn_left()
     draw_prong()
     turn_left()
-    for i in range(3):
+    for i in range(4):
         move()
 
 """ 
@@ -136,7 +128,8 @@ def draw_w():
     for i in range(4):
         move()
     turn_left()
-    move()
+    for i in range(2):
+        move()
 
 """
 pre: Karel is facing east, two spaces past the previous letter.
@@ -169,7 +162,8 @@ def draw_r():
     move()
     paint_corner(CYAN)
     turn_left()
-    move()
+    for i in range(2):
+        move()
 
 """
 pre: Karel is facing east, two spaces past the previous letter.
@@ -192,7 +186,7 @@ def draw_d():
     paint_corner(CYAN)
     move()
     turn_around()
-    for i in range(2):
+    for i in range(3):
         move()
 
 # Karel moves to 01, 20.
@@ -212,6 +206,7 @@ def move_down():
     turn_right()
     while front_is_clear():
         move()
+
 # Karel draws a line 5 spaces long.
 def draw_line():
     for i in range(4):
