@@ -33,15 +33,16 @@ def main():
     move()
 
 """ 
-pre: Karel is facing north, prior to writing
+pre: Karel is facing north, prior to writing.
 post: Karel is facing east, one space past the completed letter H.
 """
 def draw_h():
+    turn_around()
     draw_line()
     turn_around()
     for i in range(2):
         move()
-    turn_left()
+    turn_right()
     move()
     paint_corner(CYAN)
     move()
@@ -192,10 +193,10 @@ def draw_d():
     for i in range(2):
         move()
 
-# Karel moves to 01, 15.
+# Karel moves to 01, 20.
 def move_to_top_line():
     turn_left()
-    for i in range(15):
+    while front_is_clear():
         move()
 
 """ 
