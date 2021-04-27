@@ -8,7 +8,9 @@ This file is for optional extension programs.
 
 def main():
     """
-    Karel draws the text, "HELLO WORLD".
+    Karel draws the text, "HELLO WORLD". Works in Extension world 20*20.
+    pre: Karel is facing east at (01, 01), prior to writing "HELLO WORLD".
+    post: Karel is facing east at (20, 10), after writing "HELLO WORLD".
     """
     move_to_top_line()
     draw_h()
