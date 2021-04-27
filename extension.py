@@ -21,13 +21,14 @@ def main():
     move_down()
     draw_w()
     draw_o()
+    move()
     draw_r()
     draw_l()
     draw_d()
 
 """ 
 pre: Karel is facing north, prior to writing.
-post: Karel is facing east, one space past the completed letter H.
+post: Karel is facing east, two spaces past the completed letter H.
 """
 def draw_h():
     turn_around()
@@ -50,7 +51,7 @@ def draw_h():
 
 """ 
 pre: Karel is facing east, two spaces past the previous letter.
-post: Karel is facing east, one space past the completed letter E.
+post: Karel is facing east, two spaces past the completed letter E.
 """
 def draw_e():
     turn_left()
@@ -71,7 +72,7 @@ def draw_e():
 
 """ 
 pre: Karel is facing east, two spaces past the previous letter.
-post: Karel is facing east, one space past the completed letter L.
+post: Karel is facing east, two spaces past the completed letter L.
 """
 def draw_l():
     turn_left()
@@ -108,7 +109,7 @@ def draw_o():
 
 """
 pre: Karel is facing west.
-post: Karel is facing east, one space past the completed letter W. 
+post: Karel is facing east, two spaces past the completed letter W. 
 """
 def draw_w():
     turn_right()
@@ -133,7 +134,7 @@ def draw_w():
 
 """
 pre: Karel is facing east, two spaces past the previous letter.
-post: Karel is facing east, one space past the completed letter R.
+post: Karel is facing east, two spaces past the completed letter R.
 """
 def draw_r():
     turn_left()
